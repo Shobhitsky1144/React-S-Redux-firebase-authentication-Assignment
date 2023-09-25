@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img{
+  
+        border-radius: 50%;
+        height: 226px;
+        width: 226px;
+        object-fit: cover;
+}
+.parent{
+
+        display: grid;
+        place-items: center;
+}
+@media screen and (max-width:768px) {
+    .parent button{
+        width: 100%;
+      
+    }
+}
