@@ -14,10 +14,10 @@ Before running the application, ensure you have the following prerequisites inst
 
 1. Clone the repository to your local machine using Git:
 
-   git clone https://github.com/your-username/your-react-app.git
+   git clone https://github.com/Shobhitsky1144/ReactJS-Redux-firebase-authentication-Assignment.git
 
 2.Navigate to the project directory:
-   cd your-react-app
+   cd ReactJS-Redux-firebase-authentication-Assignment
 
 3.Install the project dependencies:
 npm install
