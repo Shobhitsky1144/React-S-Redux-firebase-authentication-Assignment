@@ -1,5 +1,6 @@
 
-# Your React Application Name
+# ReactJS-Redux-firebase-authentication-Assignment
+tech stack-html,css,javascript,botstrap,redux,redux-thunk,firebase,firebase db and firebase auth.
 
 Welcome to your React Web application! This application allows users to sign up, log in, and access a home page,hange profile,ccess user info from server. Below are instructions on how to run the application and some additional information.
 
