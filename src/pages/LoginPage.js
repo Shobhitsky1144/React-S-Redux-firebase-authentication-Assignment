@@ -42,18 +42,16 @@ function LoginPage() {
               className="form-control"
               placeholder="email"
               value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               className="form-control"
               placeholder="password"
               value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
+              onChange={(e) => 
+                setPassword(e.target.value)
+              }
             />
 
             <button className="my-3  auth-btn"  onClick={validateForm}>

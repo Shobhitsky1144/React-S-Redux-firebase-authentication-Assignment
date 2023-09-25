@@ -10,7 +10,6 @@ function RegisterPage() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setCPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -34,7 +33,7 @@ function RegisterPage() {
   };
 
   const handleSubmit = () => {
-    dispatch(registerUser(auth, email, password,name,phone));
+    dispatch(registerUser(auth, email, password,name));
   };
 
   return (
@@ -90,19 +89,11 @@ function RegisterPage() {
               className="form-control"
               placeholder="name"
               value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
+              onChange={(e) => 
+                setName(e.target.value)
+              }
             />
-             <input
-              type="text"
-              className="form-control"
-              placeholder="phone"
-              value={phone}
-              onChange={(e) => {
-                setPhone(e.target.value);
-              }}
-            />
+             
 
             <button className="my-3 auth-btn" onClick={validateForm}>
               REGISTER

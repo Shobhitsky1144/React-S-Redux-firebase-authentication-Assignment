@@ -30,10 +30,10 @@ export const logoutUser = () => (dispatch) => {
   window.location.href = "/login";
 };
 
-export const registerUser = (auth, email, password,displayName,phoneNumber) => async (dispatch) => {
+export const registerUser = (auth, email, password,displayName) => async () => {
   try {
-    let res=await createUserWithEmailAndPassword(auth, email, password,displayName,phoneNumber);
-    await updateProfile (res.user,{displayName,phoneNumber})
+    let res=await createUserWithEmailAndPassword(auth, email, password,displayName);
+    await updateProfile (res.user,{displayName})
     toast.success("Registered successfully.");
     window.location.href = "/login";
   } catch (error) {
